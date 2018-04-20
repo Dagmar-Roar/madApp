@@ -1,0 +1,79 @@
+page-home {
+    .content_container{
+        background:map-get($colors, madlightGrey);
+        
+        .thumb_list{
+            background:map-get($colors, madlightGrey);
+            box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+            border-radius:2px;
+
+
+            h2{
+                font-size:0.70em;
+                text-align: center;
+                padding-top:3px;
+                font-weight:bold;
+                
+            }
+
+            .avatar{
+                display:flex;
+                flex-direction:column;
+                align-items: center;
+
+            }
+        }
+
+       .cart_title{
+            width:46%;
+            margin: 30px 0 30px 10px ;
+            
+        }
+
+       ion-avatar img  {
+            width:120% !important;
+            height : 120% !important;
+            max-width: 100px !important;  //any size
+            max-height: 100px !important; //any size
+        }
+    }
+
+     /* Stories */
+  .story {
+    white-space: nowrap;
+    height: 105px
+  }
+  
+  .story_scroll {
+    display: inline-block;
+    width: 70px;
+    margin: 10px;
+  }
+
+  .story_img_bg {
+    width: 70px;
+    padding: 2px;
+    border-radius: 50%;
+    padding-bottom: 0;
+    transition: all 1s;
+    -webkit-transition: all 0.2s;
+    background: -webkit-linear-gradient(left top, #E1255C 0%, #1D3666 100%);
+  }
+
+  .story_img_bg:active {
+    background: -webkit-linear-gradient(left top, #E1255C 0%, #1D3666 100%);
+    transform: scale(1.1);
+  }
+
+  .story_img {
+    width: 70px;
+    border-radius: 50%;
+  }
+
+  .story_text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 3px
+  }
+}
