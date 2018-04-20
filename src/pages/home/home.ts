@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { NavController, NavParams } from 'ionic-angular';
 
-import { ContactPage } from '../contact/contact';
+import { ProjectDetailPage } from '../project-detail/project-detail';
 import { WpProvider } from './../../providers/wp/wp';
 
 @Component({
@@ -29,7 +29,7 @@ export class HomePage {
   }
 
   tappedPost(post){
-    this.navCtrl.push( ContactPage, {
+    this.navCtrl.push( ProjectDetailPage, {
       post : post
     })
   }

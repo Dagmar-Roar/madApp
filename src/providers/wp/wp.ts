@@ -14,6 +14,8 @@ export class WpProvider {
 
   api_url_user = 'http://to-be-a-freelance.com/wp-json/wp/v2/users/mader';
 
+  api_url_article = 'http://to-be-a-freelance.com/wp-json/wp/v2/post_type/post';
+
   constructor(public http: HttpClient) {
     console.log('Hello WpProvider Provider');
   }
@@ -24,6 +26,10 @@ export class WpProvider {
 
   getUser(){
     return this.http.get(this.api_url_user);
+  }
+
+  getArticle(){
+    return this.http.get(this.api_url_article);
   }
 
 }

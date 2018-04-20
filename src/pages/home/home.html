@@ -17,10 +17,10 @@
 
 
     <div class="cart_title">  
-        <h2 class="titre">Top Projects</h2> 
+        <h2 class="titre">MAD Projects</h2> 
     </div>
   
-    <ion-card *ngFor="let post of posts">
+    <ion-card *ngFor="let post of posts" (click)="tappedPost(post);" class="prod">
 
       <div [innerHTML]="post.thumbnail"></div>
   
@@ -34,15 +34,15 @@
       </ion-card-content>
   
       <ion-item>
-        <ion-icon name='clipboard' item-start style="color: #d03e84"></ion-icon>
+        <ion-icon name='clipboard' item-start style="color: #E1255C"></ion-icon>
         Goal
-        <ion-badge item-end>{{ post.goal }} $</ion-badge>
+        <ion-badge item-end style="background: #E1255C">{{ post.goal }} $</ion-badge>
       </ion-item>
   
       <ion-item>
-        <ion-icon name='people' item-start style="color: #55acee"></ion-icon>
+        <ion-icon name='people' item-start style="color: #1D3666"></ion-icon>
         Contributors
-        <ion-badge item-end [innerHTML]="post.project_users"></ion-badge>
+        <ion-badge item-end [innerHTML]="post.project_users" style="background: #1D3666"></ion-badge>
       </ion-item>
   
     </ion-card>

@@ -10,11 +10,13 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { ProjectDetailPage } from '../pages/project-detail/project-detail';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { WpProvider } from '../providers/wp/wp';
+
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import { WpProvider } from '../providers/wp/wp';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    ProjectDetailPage
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import { WpProvider } from '../providers/wp/wp';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    ProjectDetailPage
   ],
   providers: [
     StatusBar,
