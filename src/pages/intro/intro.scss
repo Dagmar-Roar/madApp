@@ -1,0 +1,28 @@
+page-intro {
+    .swiper-pagination-bullet-active {
+        background: map-get($colors, madBlue);
+      }
+
+      #mainContent{
+          background-color: map-get($colors, madPink);
+          color : map-get($colors, madlightGrey);
+          background-image: linear-gradient(to top, map-get($colors, madPink) 0%,  map-get($colors, madBlue) 100%);
+      }
+
+      #btn {
+          border: 1px solid map-get($colors, madBlue);
+          color: map-get($colors, madBlue);
+          transition: 1s ease;
+
+          &:hover{
+              background-color: map-get($colors, madBlue);
+              color : map-get($colors, madPink);
+          }
+      }
+
+      .logInput{
+         background-color: map-get($colors, madPink);
+         border: none;
+      }
+}
+
