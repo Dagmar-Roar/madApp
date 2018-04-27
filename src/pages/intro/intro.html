@@ -20,7 +20,16 @@
 
     <ion-slide>
       <img src="assets/imgs/MAD_Logo_Blanc.png">
-      <h1>Get started now!</h1>
+      <!-- <h1>Get started now!</h1> -->
+      <br>
+      <ion-list id="logForm">
+        <ion-item class="logInput">
+          <ion-input type="email" placeholder="email" class="logInput"></ion-input>
+        </ion-item>
+        <ion-item class="logInput">
+          <ion-input type="password" placeholder="password" class="logInput"></ion-input>
+        </ion-item>
+      </ion-list>
       <button ion-button outline small id="btn" (click)="navHome()">
         Start using the app
       </button>

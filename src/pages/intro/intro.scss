@@ -21,8 +21,16 @@ page-intro {
       }
 
       .logInput{
-         background-color: map-get($colors, madPink);
-         border: none;
+        background: #652F62;
+         border: none !important;
+        border-radius:3px;
+        color: #fff;
+      } 
+
+      .text-input-wp{
+          border:none !important;
       }
+
+      #logForm{margin-top:20px;}
 }
 
