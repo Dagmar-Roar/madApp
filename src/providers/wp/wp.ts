@@ -10,9 +10,9 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class WpProvider {
 
-  api_url_post = 'http://to-be-a-freelance.com/wp-json/wp/v2/post_type/ignition_product';
+  api_url_post = 'http://howmadareyou.com/wp-json/wp/v2/post_type/ignition_product';
 
-  api_url_user = 'http://to-be-a-freelance.com/wp-json/wp/v2/users/mader';
+  api_url_user = 'http://howmadareyou.com/wp-json/wp/v2/users/mader';
 
   api_url_article = 'http://to-be-a-freelance.com/wp-json/wp/v2/post_type/post';
 

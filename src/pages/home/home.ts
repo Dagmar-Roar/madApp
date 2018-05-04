@@ -34,5 +34,5 @@ export class HomePage {
       post : post
     })
   }
-
+  
 }

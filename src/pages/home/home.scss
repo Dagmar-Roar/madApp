@@ -50,7 +50,6 @@ page-home {
         }
     }
 
-  
 
      /* Stories */
   .story {
@@ -98,5 +97,15 @@ page-home {
 
   .camp{
     margin-bottom:10px;
+  }
+
+  .social_div{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    icon{
+      width:50px;
+    }
   }
 }
