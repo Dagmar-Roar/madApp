@@ -44,7 +44,11 @@ $colors: (
   madPink:    #E1255C,
   madBlue:     #1D3666,
   madGrey:    #727074,
-  madlightGrey: #E9E9E9
+  madlightGrey: #E9E9E9,
+  twitter:    #1da1f4,
+  google:     #dc4a38,
+  vimeo:      #23b6ea,
+  facebook:   #3b5998
 );
 
 $toolbar-background: map-get($colors, madBlue);

@@ -24,12 +24,14 @@
       <br>
       <ion-list id="logForm">
         <ion-item class="logInput">
-          <ion-input type="email" placeholder="email" class="logInput"></ion-input>
+          <ion-input type="email" placeholder="email" class="logInput" [(ngModel)]="email" ></ion-input>
         </ion-item>
         <ion-item class="logInput">
-          <ion-input type="password" placeholder="password" class="logInput"></ion-input>
+          <ion-input type="password" placeholder="password" class="logInput" [(ngModel)]="password"></ion-input>
         </ion-item>
       </ion-list>
+      <button ion-button block id="log_btn"  (click)="onLogin()">Login</button>      
+      
       <button ion-button outline small id="btn" (click)="navHome()">
         Start using the app
       </button>

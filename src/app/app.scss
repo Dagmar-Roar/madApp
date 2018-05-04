@@ -1,5 +1,18 @@
 // http://ionicframework.com/docs/theming/
 
+.mysidmenu{
+    background:map-get($colors, madlightGrey);
+    color: map-get($colors, light);
+}
+
+.btn{
+    color: map-get($colors, madGrey);
+}
+
+.user_img{
+    margin: 10px auto 10px auto; 
+}
+
 
 // App Global Sass
 // --------------------------------------------------

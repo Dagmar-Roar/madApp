@@ -12,11 +12,11 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { ProjectDetailPage } from '../pages/project-detail/project-detail';
 import { IntroPage } from '../pages/intro/intro';
-
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { WpProvider } from '../providers/wp/wp';
+import { AuthProvider } from '../providers/auth/auth';
 
 
 
@@ -28,7 +28,7 @@ import { WpProvider } from '../providers/wp/wp';
     HomePage,
     TabsPage,
     ProjectDetailPage,
-    IntroPage
+    IntroPage 
   ],
   imports: [
     BrowserModule,
@@ -49,7 +49,8 @@ import { WpProvider } from '../providers/wp/wp';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    WpProvider
+    WpProvider,
+    AuthProvider
    
   ]
 })

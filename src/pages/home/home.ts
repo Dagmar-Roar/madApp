@@ -13,12 +13,13 @@ export class HomePage {
   
   posts;
   users;
+  levels;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient, private WpProvider: WpProvider) {
 
     this.WpProvider.getPost().subscribe( data => {
       console.log(data);
-      this.posts = data;
+      this.posts = data;  
     });
 
     this.WpProvider.getUser().subscribe(data =>{

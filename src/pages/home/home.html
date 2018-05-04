@@ -1,5 +1,10 @@
 <ion-header>
   <ion-navbar>
+      <ion-buttons start>
+          <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-buttons>
       <ion-title><img width="110" height="40" src="assets/imgs/MAD_Logo_Blanc.png"></ion-title>
   </ion-navbar>
 </ion-header>
@@ -25,10 +30,12 @@
       <div [innerHTML]="post.thumbnail"></div>
   
       <ion-card-content >
-        <ion-card-title >
+        <ion-card-title>
           {{ post.product_name }}
         </ion-card-title>
-        <div [innerHTML]="post.short_desc" class="reward"></div>
+        <div [innerHTML]="post.short_desc" class="reward">
+           
+        </div>
         <br>
       
       </ion-card-content>

@@ -1,1 +1,23 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+    <ion-header>
+      <ion-toolbar>
+        <!-- <ion-title>Menu</ion-title> -->
+        <img width="110" height="40" src="assets/imgs/MAD_Logo_Blanc.png">
+      </ion-toolbar>
+    </ion-header>
+  
+    <ion-content class="mysidmenu">
+      <ion-avatar class="user_avatar"> 
+        <img  width="110" src="assets/imgs/glasses.png" class="user_img"/>
+      </ion-avatar>
+      <ion-list>
+        <button class="mysidmenu btn" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+          {{p.title}}
+        </button>
+      </ion-list>
+    </ion-content>
+  
+  </ion-menu>
+  
+  <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+  <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

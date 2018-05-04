@@ -13,29 +13,40 @@
 </ion-header>
 
 
-<ion-content>
-  <ion-card *ngIf="selectedPost">
+<ion-content *ngIf="selectedPost">
+  <ion-card  *ngFor="let item of selectedPost.level">
 
-    <div [innerHTML]="selectedPost.thumbnail"></div>
+    <!-- <div [innerHTML]="selectedPost.thumbnail"></div> -->
 
-    <ion-card-content >
+    <ion-card-content class="reward_card">
       <ion-card-title >
         {{ selectedPost.product_name }}
       </ion-card-title>
-     
+        <div class="itemo" >
+          <ion-grid>
+            <ion-row>
+              <ion-col col-12>
+                <p>{{item.price}}$ PACKAGE</p>
+                <p>{{item.backer}} Maders</p>
+                <p>{{item.title}}</p>
+                <p>{{item.reward_desc}}</p>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-6>
+                <p>DELIVERED DURING</p>
+                <p>{{item.delivery}}</p>
+              </ion-col>
+              <ion-col col-6>
+                <p>REACHES</p>
+                <p>{{item.ship_to}}</p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+        <button ion-button color="light">PURCHASE</button>
     </ion-card-content>
 
-    <ion-item>
-      <ion-icon name='clipboard' item-start style="color: #E1255C"></ion-icon>
-      Goal
-      <ion-badge item-end style="background: #E1255C">{{ selectedPost.goal }} $</ion-badge>
-    </ion-item>
-
-    <ion-item>
-      <ion-icon name='people' item-start style="color: #1D3666"></ion-icon>
-      Contributors
-      <ion-badge item-end [innerHTML]="selectedPost.project_users" style="background: #1D3666"></ion-badge>
-    </ion-item>
   </ion-card>
 
 </ion-content>
