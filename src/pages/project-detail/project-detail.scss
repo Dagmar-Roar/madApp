@@ -1,4 +1,5 @@
 page-project-detail {
+    
    .itemo{  
     p{
         color:black !important;
@@ -8,7 +9,17 @@ page-project-detail {
    .reward_card{
        button{
            width:100%;
-           margin-top:20px;
+           margin-top:10px auto 10px auto;
        }
+   }
+
+   .col1{
+       p:nth-child(odd){
+           font-weight: bold;
+       }
+   }
+
+   .reward_container{
+    background:map-get($colors, madlightGrey);
    }
 }

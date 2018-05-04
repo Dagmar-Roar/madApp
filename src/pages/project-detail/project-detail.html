@@ -13,25 +13,28 @@
 </ion-header>
 
 
-<ion-content *ngIf="selectedPost">
+<ion-content *ngIf="selectedPost" class="reward_container">
+  <!-- <h3 class="titre">Rewards  {{ selectedPost.product_name }}</h3> -->
   <ion-card  *ngFor="let item of selectedPost.level">
 
     <!-- <div [innerHTML]="selectedPost.thumbnail"></div> -->
 
     <ion-card-content class="reward_card">
-      <ion-card-title >
-        {{ selectedPost.product_name }}
+      <ion-card-title class="titre">
+          {{item.title}}
       </ion-card-title>
         <div class="itemo" >
           <ion-grid>
             <ion-row>
-              <ion-col col-12>
+              <ion-col class="col1" col-12>
                 <p>{{item.price}}$ PACKAGE</p>
                 <p>{{item.backer}} Maders</p>
-                <p>{{item.title}}</p>
+                
+                <p>WHAT YOU GET</p>
                 <p>{{item.reward_desc}}</p>
               </ion-col>
             </ion-row>
+            <button ion-button color="light">PURCHASE</button>
             <ion-row>
               <ion-col col-6>
                 <p>DELIVERED DURING</p>
@@ -44,7 +47,7 @@
             </ion-row>
           </ion-grid>
         </div>
-        <button ion-button color="light">PURCHASE</button>
+        
     </ion-card-content>
 
   </ion-card>
